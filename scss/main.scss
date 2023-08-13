@@ -1,0 +1,33 @@
+/* Base */
+@import './base/reset';
+@import './base/variables';
+@import './base/base';
+
+/* Pages */
+@import'./blocks/other-pages/project';
+@import'./blocks/other-pages/skills&contact';
+
+
+/* Components */
+@import './components/buttons';
+@import './components/fonts';
+
+
+/* Blocks */
+@import './blocks/nav';
+@import './blocks/header';
+@import './blocks/main-section';
+@import './blocks/footer';
+
+
+
+
+
+
+
+
+
+
+
+
+

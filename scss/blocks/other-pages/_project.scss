@@ -1,0 +1,96 @@
+.project-details {
+    max-width: 865px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-details-cover {
+    max-width: 100%;
+    border-radius: $border-radius-card;
+    box-shadow: $box-shadow;
+    margin-bottom: 40px;
+}
+
+.project-details__desc {
+    color: var(--title-color);
+    line-height: 1.3;
+    font-size: var(--font-size-h3);
+    font-family: $font-hanson;
+    margin-bottom: 150px;
+
+    em {
+        color: var(--text-color);
+        font-size: var(--font-size-text-big);
+       font-family: $font-founders;
+       font-style: normal;
+       line-height: 2;
+    }
+
+    @media (max-width: 620px) {
+        font-size: var(--font-size-h3);
+        margin-bottom: 100px;
+    }
+}
+
+.project-details__info-banner {
+    border: 2px solid var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-transform: none;
+    text-align: start;
+    margin-bottom: 150px;
+
+    @media (max-width: 620px) {
+        margin-bottom: 100px;
+    }
+}
+.project-details__info-banner__headline {
+    color: var(--title-color);
+    font-family: $font-hanson;
+    text-transform: uppercase;
+    font-size: var(--font-size-h3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-details__info-banner__text {
+    line-height: 1.7;
+    font-size: var(--font-size-text-big);
+    color: var(--text-color);
+}
+
+.project-details__main-text {
+    text-align: start;
+    text-transform: none;
+    line-height: 1.7;
+
+    h2 {
+        color: var(--title-color);
+        text-transform: uppercase;
+        text-align: start;
+        margin-bottom: 40px;
+        font-family: $font-hanson;
+        font-size: var(--font-size-h3);
+    }
+
+    h3 {
+        color: var(--title-color);
+        font-family: $font-hanson;
+        font-weight: bold;
+        font-size: var(--font-size-h4);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: var(--font-size-text-big);
+        margin-bottom: 80px;
+        color: var(--text-color);
+    }
+}
+
+.fazit {
+    margin-top: 150px;
+}

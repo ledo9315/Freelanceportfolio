@@ -1,0 +1,31 @@
+.section {
+    padding: 100px 0;
+
+    @media (max-width: 620px) {
+        padding: 40px 0;;
+    }
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+.project {
+    max-width: 370px;
+    background-color: var(--project-card-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: $border-radius-card;
+
+    &__img {
+        border-radius: $border-radius-card;
+    }
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+         transform: scale(1.02);    
+     }
+}

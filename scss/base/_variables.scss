@@ -1,0 +1,51 @@
+/* Colors */
+$color-white: #FFFFFF;
+$color-black: #171718;
+$color-purple: #D560D8;
+$color-yellowgreen: #D4F061; 
+$color-black-border: #26292D;
+
+$page-bg: $color-white;
+$text-color: $color-black;
+
+$dark-bg: $color-black;
+$dark-border: $color-black-border;
+$header-text: $color-white;
+$accent: $color-yellowgreen;
+
+
+  /* font-weight */
+  $font-weight-regular: 400;
+  $font-weight-medium: 500;
+  $font-weight-bold: 700;
+  
+  /* font-family */
+  $font-dm-sans: 'DM Sans', sans-serif;
+  $font-poppins: 'Poppins', sans-serif;
+  $font-hanson: 'Hanson', sans-serif;
+  $font-founders: 'FoundersGrotesk', sans-serif;
+
+
+/* Border-radius */
+$border-radius-button: 5px;
+$border-radius-card: 10px;
+
+/* Box-shadow */
+$box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+
+
+/* Mixin Header */
+
+@mixin custom-heading($font, $weight, $size, $line-height, $margin-bottom) {
+  font-family: $font;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin responsive-font-size($max-width, $font-size) {
+  @media (max-width: $max-width) {
+    font-size: $font-size;
+  }
+}
