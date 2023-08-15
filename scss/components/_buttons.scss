@@ -7,8 +7,9 @@
     border-radius: 30px;
     letter-spacing: 0.15px;
     font-size: var(--font-size-small);
-    text-transform: none;
-    font-size: var(--font-size-normal);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
 
     /* hover */
     --height: 40px;
@@ -28,6 +29,23 @@
         top: 1px;
     }
 
+    &--green {
+        background-color: var(--accent2);
+
+        i {
+            margin-left: 5px;
+        }
+    }
+
+    &--purple {
+        background-color: var(--accent);
+        
+        i {
+            margin-left: 5px;
+        }
+    }
+
+
     @include responsive-font-size(960px, var(--font-size-normal));
     @include responsive-font-size(620px, var(--font-size-normal));
     
@@ -38,6 +56,7 @@
     @media (max-width: 960px) {
     }
 }
+
 
 
 /* Dark mode btn */

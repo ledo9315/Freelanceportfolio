@@ -245,6 +245,19 @@ a {
   margin-bottom: 40px;
 }
 
+.project-details__button-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 620px) {
+  .project-details__button-wrapper {
+    width: 100%;
+  }
+}
+
 .project-details__desc {
   color: var(--title-color);
   line-height: 1.3;
@@ -579,8 +592,9 @@ form textarea:active {
   border-radius: 30px;
   letter-spacing: 0.15px;
   font-size: var(--font-size-small);
-  text-transform: none;
-  font-size: var(--font-size-normal);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
   /* hover */
   --height: 40px;
   --progress: 0px;
@@ -595,6 +609,18 @@ form textarea:active {
 .button:active {
   position: relative;
   top: 1px;
+}
+.button--green {
+  background-color: var(--accent2);
+}
+.button--green i {
+  margin-left: 5px;
+}
+.button--purple {
+  background-color: var(--accent);
+}
+.button--purple i {
+  margin-left: 5px;
 }
 @media (max-width: 960px) {
   .button {
