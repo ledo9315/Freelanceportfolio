@@ -610,16 +610,17 @@ form textarea:active {
   position: relative;
   top: 1px;
 }
-.button--green {
+.button--github {
   background-color: var(--accent2);
 }
-.button--green i {
+.button--github i {
   margin-left: 5px;
+  font-size: 1.1rem;
 }
-.button--purple {
+.button--link {
   background-color: var(--accent);
 }
-.button--purple i {
+.button--link i {
   margin-left: 5px;
 }
 @media (max-width: 960px) {

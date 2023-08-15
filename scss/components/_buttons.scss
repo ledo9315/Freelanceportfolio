@@ -29,15 +29,16 @@
         top: 1px;
     }
 
-    &--green {
+    &--github {
         background-color: var(--accent2);
 
         i {
             margin-left: 5px;
+            font-size: 1.1rem;
         }
     }
 
-    &--purple {
+    &--link {
         background-color: var(--accent);
         
         i {
