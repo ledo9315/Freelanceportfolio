@@ -8,8 +8,8 @@
     letter-spacing: 0.15px;
     font-size: var(--font-size-small);
     text-align: center;
-    text-transform: uppercase;
     cursor: pointer;
+    text-transform: none;
 
     /* hover */
     --height: 40px;
@@ -28,6 +28,7 @@
         position: relative;
         top: 1px;
     }
+
 
     &--github {
         background-color: var(--accent2);

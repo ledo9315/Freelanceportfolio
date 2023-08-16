@@ -1,16 +1,18 @@
+@import './components/fonts';
 /* Base */
 @import './base/reset';
 @import './base/variables';
 @import './base/base';
+
+/* Components */
+@import './components/buttons';
+
 
 /* Pages */
 @import'./blocks/other-pages/project';
 @import'./blocks/other-pages/skills&contact';
 
 
-/* Components */
-@import './components/buttons';
-@import './components/fonts';
 
 
 /* Blocks */

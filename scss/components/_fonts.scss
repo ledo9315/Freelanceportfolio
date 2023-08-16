@@ -2,14 +2,20 @@
 
 @font-face {
     font-family: 'Hanson';
-    src: url('/fonts/Hanson-Bold.ttf') format('truetype'); /* Pfade anpassen */
-    /* Weitere Definitionen wie font-weight, font-style etc. */
+    src: url('../fonts/Hanson-Bold.woff2') format('woff2'), 
+    url('../fonts/Hanson-Bold.woff') format('woff'); 
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'FoundersGrotesk';
-    src: url('/fonts/FoundersGrotesk-Regular.otf') format('opentype'); /* Pfade anpassen */
-    /* Weitere Definitionen wie font-weight, font-style etc. */
+    src: url('../fonts/FoundersGrotesk-Regular.woff2') format('woff2'), 
+    url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
 
 
