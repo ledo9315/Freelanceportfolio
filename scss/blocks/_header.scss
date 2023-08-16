@@ -88,6 +88,11 @@
 }
 
 .arrow {
+    display: none;
+
+    @media (max-width: 620px) {
+        display: block;
+    }
     position: absolute;
     bottom: 50px;
     animation: animation-arrow 5s ease-in-out infinite;

@@ -920,9 +920,15 @@ form textarea:active {
 }
 
 .arrow {
+  display: none;
   position: absolute;
   bottom: 50px;
   animation: animation-arrow 5s ease-in-out infinite;
+}
+@media (max-width: 620px) {
+  .arrow {
+    display: block;
+  }
 }
 
 @keyframes animation-arrow {
