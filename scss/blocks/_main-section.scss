@@ -12,6 +12,10 @@
     gap: 30px;
     flex-wrap: wrap;
 
+    @media (max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .project {
     max-width: 370px;
@@ -26,6 +30,14 @@
     transition: transform 0.3s ease;
 
     &:hover {
-         transform: scale(1.02);    
-     }
+        transform: scale(1.02);    
+    }
+
+    @media (max-width: 960px) {
+        max-width: 70%;
+    }
+
+    @media (max-width: 620px) {
+        max-width: 100%;
+    }
 }

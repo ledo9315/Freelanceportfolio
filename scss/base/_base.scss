@@ -46,7 +46,7 @@
     --header-top-size-1: var(--top-size-big-1);
     --header-top-size-2: var(--top-size-big-2);
 
-    @media (max-width: 960px) {
+    @media (max-width: 620px) {
         --header-top-size-1: var(--top-size-small-1);
         --header-top-size-2: var(--top-size-small-2);
     }
@@ -54,7 +54,7 @@
 
 .dark {
      /* Dark mode */
-     --title-color: var(--white);
+    --title-color: var(--white);
     --page-bg: var(--black);
     --text-color: var(--white-text);
     --title-1: var(--yellowgreen);
@@ -113,6 +113,7 @@ a {
     }
 
     @media (max-width: 960px) {
+        font-size: var(--font-size-h2);
         padding: 0 20px;
     }
 
