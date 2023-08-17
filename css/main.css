@@ -508,13 +508,13 @@ a {
   margin-bottom: 20px;
   color: var(--text-color);
 }
-.about-text h3 {
+.about-text h2 {
   font-size: var(--font-size-h3);
   font-family: "Hanson", sans-serif;
   margin-bottom: 30px;
   color: var(--title-color);
 }
-.about-text h3 em {
+.about-text h2 em {
   font-style: normal;
 }
 .about-text span {
