@@ -754,10 +754,10 @@ form textarea:active {
   width: 100%;
   background-color: var(--accent2);
 }
-.logo-small {
+.logo {
   transition: all 0.1s ease-in;
 }
-.logo-small:hover {
+.logo:hover {
   scale: 1.1;
 }
 

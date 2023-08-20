@@ -1,223 +1,196 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leonid Domahalskyy - Über mich</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonid Domahalskyy - &uuml;ber mich</title>
+    <link rel="stylesheet" href="./css/main.min.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#686868" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#686868">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FNR6GXG3S6"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNR6GXG3S6"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-      gtag("config", "G-FNR6GXG3S6");
+        gtag("config", "G-FNR6GXG3S6");
     </script>
-  </head>
-  <body>
-    <!-- Nav -->
-    <nav class="nav">
-      <div class="container">
+</head>
+<body>
+<!-- Nav -->
+<nav class="nav">
+    <div class="container">
         <div class="nav-row">
-          <a href="./index.html">
-            <img
-              class="logo-small"
-              src="./img/icons/logo small.svg"
-              alt="logo"
-            />
-          </a>
-          <button class="dark-mode-btn">
-            <img
-              src="./img/icons/sun.svg"
-              alt="Light mode"
-              class="dark-mode-btn__icon"
-            />
-            <img
-              src="./img/icons/moon.svg"
-              alt="Dark mode"
-              class="dark-mode-btn__icon"
-            />
-          </button>
+            <a href="./index.html">
+                <img class="logo" src="./img/icons/logo.svg" alt="logo">
+            </a>
+            <button class="dark-mode-btn">
+                <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+            </button>
 
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Projekte</a>
-            </li>
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="./index.html" class="nav-list__link">Projekte</a>
+                </li>
 
-            <li class="nav-list__item">
-              <a href="./skills.html" class="nav-list__link--active"
-                >Über mich</a
-              >
-            </li>
+                <li class="nav-list__item">
+                    <a href="./skills.html" class="nav-list__link--active">&uuml;ber mich</a>
+                </li>
 
-            <li class="nav-list__item">
-              <a href="./contacts.html" class="nav-list__link">Kontakt</a>
-            </li>
-          </ul>
+                <li class="nav-list__item">
+                    <a href="./contacts.html" class="nav-list__link">Kontakt</a>
+                </li>
+            </ul>
 
-          <div class="hamburger">
-            <span class="bar"></span><span class="bar"></span
-            ><span class="bar"></span>
-          </div>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Main -->
-    <main class="section">
-      <div class="container">
-        <h1 class="title-1">Über mich</h1>
+<!-- Main -->
+<main class="section">
+    <div class="container">
+        <h1 class="title-1">&uuml;ber mich</h1>
 
         <div class="about-wrapper">
-          <div class="about-image">
-            <img src="./img/portrait.webp" alt="portrait" />
-          </div>
-          <div class="about-text">
-            <h2><em>Webentwickler</em> und <em>Designer</em> aus Flensburg</h2>
-            <p>
-              Moin! Ich bin ein leidenschaftlicher Programmierer aus dem
-              malerischen Flensburg im Norden Deutschlands. Mein Wissen in der
-              Softwareentwicklung habe ich durch kontinuierliches Engagement,
-              praktische Erfahrungen und mein Studium der
-              <span>Medieninformatik</span> an der Hochschule Flensburg
-              erworben.
-            </p>
-            <p>
-              Ich bin besonders begeistert von der Entwicklung von
-              Webanwendungen, insbesondere dem
-              <span>Web-/Frontend-Design und UI/UX</span>. Für mich ist es
-              wichtig, dass Lösungen nicht nur funktional sind, sondern auch
-              benutzerfreundlich. Innovation und Benutzerfreundlichkeit sind
-              meine ständige Motivation.
-            </p>
-            <p>
-              Stets halte ich mich über die neuesten Technologien auf dem
-              Laufenden, um sicherzustellen, dass meine Fähigkeiten den
-              aktuellen Anforderungen entsprechen. Wenn du einen versierten
-              Entwickler suchst, der
-              <span>herausragende Ergebnisse</span> erzielt, stehe ich Ihnen
-              gerne zur Verfügung.
-            </p>
-            <p>
-              Lass uns gemeinsam an spannenden Projekten arbeiten und großartige
-              digitale Erlebnisse schaffen. Kontaktiere mich, um mehr über meine
-              Arbeit und wie ich dir helfen kann, zu erfahren.
-            </p>
-          </div>
+            <div class="about-image">
+                <img src="./img/portrait.webp" alt="portrait">
+            </div>
+<div class="about-text">
+    <h2><em>Webentwickler</em> und <em>Designer</em> aus Flensburg</h2>
+    <p>
+        Moin! Ich bin ein leidenschaftlicher Programmierer aus dem malerischen Flensburg im Norden Deutschlands.
+        Mein Wissen in der Softwareentwicklung habe ich durch kontinuierliches Engagement, praktische Erfahrungen
+        und mein Studium der <span>Medieninformatik</span> an der Hochschule Flensburg erworben.
+    </p>
+    <p>
+        Ich bin besonders begeistert von der Entwicklung von Webanwendungen, insbesondere dem
+        <span>Web-/Frontend-Design und UI/UX</span>. F&uuml;r mich ist es wichtig, dass L&ouml;sungen nicht nur funktional
+        sind, sondern auch benutzerfreundlich. Innovation und Benutzerfreundlichkeit sind meine st&auml;ndige Motivation.
+    </p>
+    <p>
+        Stets halte ich mich &uuml;ber die neuesten Technologien auf dem Laufenden, um sicherzustellen, dass meine
+        F&auml;higkeiten den aktuellen Anforderungen entsprechen. Wenn du einen versierten Entwickler suchst, der
+        <span>herausragende Ergebnisse</span> erzielt, stehe ich Ihnen gerne zur Verf&uuml;gung.
+    </p>
+    <p>
+        Lass uns gemeinsam an spannenden Projekten arbeiten und gro&szlig;artige digitale Erlebnisse schaffen. Kontaktiere
+        mich, um mehr &uuml;ber meine Arbeit und wie ich dir helfen kann, zu erfahren.
+    </p>
+</div>
+
         </div>
 
         <ul class="content-list">
-          <li class="content-list__item">
-            <h2 class="title-2">Frontend</h2>
-            <!-- frontend marquee -->
-            <section>
-              <div class="marquee">
-                <ul class="marquee__content">
-                  <li>javascript</li>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>sass</li>
-                  <li>bem</li>
-                  <li>bootstrap</li>
-                </ul>
+            <li class="content-list__item">
+                <!-- frontend marquee -->
+                <section>
+                <h2 class="title-2">Frontend</h2>
+                    <div class="marquee">
+                        <ul class="marquee__content">
+                            <li>javascript</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>sass</li>
+                            <li>bem</li>
+                            <li>bootstrap</li>
+                        </ul>
 
-                <ul aria-hidden="true" class="marquee__content">
-                  <li>javascript</li>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>sass</li>
-                  <li>bem</li>
-                  <li>bootstrap</li>
-                </ul>
-              </div>
-            </section>
-            <!-- /frontend marquee -->
-          </li>
-          <li class="content-list__item">
-            <h2 class="title-2">Backend</h2>
-            <!-- backend marquee -->
-            <section>
-              <div class="marquee marquee--reverse">
-                <ul class="marquee__content">
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                </ul>
+                        <ul aria-hidden="true" class="marquee__content">
+                            <li>javascript</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>sass</li>
+                            <li>bem</li>
+                            <li>bootstrap</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /frontend marquee -->
+            </li>
+            <li class="content-list__item">
+                
+                <!-- backend marquee -->
+                <section>
+                     <h2 class="title-2">Backend</h2>
+                    <div class="marquee marquee--reverse">
+                        <ul class="marquee__content">
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                        </ul>
 
-                <ul aria-hidden="true" class="marquee__content">
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                  <li>mysql</li>
-                  <li>wordpress</li>
-                </ul>
-              </div>
-            </section>
-            <!-- /backend marquee -->
-          </li>
+                        <ul aria-hidden="true" class="marquee__content">
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                            <li>mysql</li>
+                            <li>wordpress</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /backend marquee -->
+            </li>
         </ul>
-      </div>
-    </main>
+    </div>
+</main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
         <ul class="social">
-          <li class="social__item">
-            <a href="https://t.me/ledo9913" target="_blank"
-              ><img src="./img/icons/telegram.svg" alt="telegram"
-            /></a>
-          </li>
-          <li class="social__item">
-            <a
-              href="https://discordapp.com/users/1016065690253406298"
-              target="_blank"
-              ><img src="./img/icons/discord.svg" alt="discord"
-            /></a>
-          </li>
-          <li class="social__item">
-            <a href="https://dribbble.com/ledo93" target="_blank"
-              ><img src="./img/icons/dribbble.svg" alt="dribbble"
-            /></a>
-          </li>
-          <li class="social__item">
-            <a href="https://github.com/ledo9315" target="_blank"
-              ><img src="./img/icons/gitHub.svg" alt="gitHub"
-            /></a>
-          </li>
-          <li class="social__item">
-            <a
-              href="https://www.linkedin.com/in/leonid-domahalskyy-0a6b95206/?originalSubdomain=de"
-              target="_blank"
-              ><img src="./img/icons/linkedIn.svg" alt="linkedIn"
-            /></a>
-          </li>
+            <li class="social__item">
+                <a href="https://t.me/ledo9913" target="_blank">
+                    <img src="./img/icons/telegram.svg" alt="telegram">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://discordapp.com/users/1016065690253406298" target="_blank">
+                    <img src="./img/icons/discord.svg" alt="discord">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://dribbble.com/ledo93" target="_blank">
+                    <img src="./img/icons/dribbble.svg" alt="dribbble">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://github.com/ledo9315" target="_blank">
+                    <img src="./img/icons/gitHub.svg" alt="gitHub">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://www.linkedin.com/in/leonid-domahalskyy-0a6b95206/?originalSubdomain=de" target="_blank">
+                    <img src="./img/icons/linkedIn.svg" alt="linkedIn">
+                </a>
+            </li>
         </ul>
-        <div class="copyright"><p>© Leonid Domahaslkyy</p></div>
-      </div>
-    </footer>
+        <div class="copyright">
+            <p>&copy; Leonid Domahalskyy</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="./js/main.js"></script>
-  </body>
+<script src="./js/main.js"></script>
+</body>
 </html>
