@@ -87,33 +87,6 @@
     }
 }
 
-.arrow {
-    display: none;
-
-    @media (max-width: 620px) {
-        display: block;
-    }
-    position: absolute;
-    bottom: 50px;
-    animation: animation-arrow 5s ease-in-out infinite;
-}
-
-
-@keyframes animation-arrow {
-    0%, 100% {
-        bottom: 50px;
-    }
-    30% {
-        bottom: 30px;
-    }
-    50% {
-        bottom: 50px;
-    }
-    70% {
-        bottom: 30px;
-    }
-}
-
 
 
 @keyframes animation {

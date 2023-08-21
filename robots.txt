@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /img/
+Disallow: /project-page1
+Disallow: /project-page2
+Disallow: /project-page3
+
+Sitemap: https://www.leonid-domahalskyy.de/sitemap.xml

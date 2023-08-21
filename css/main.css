@@ -102,7 +102,6 @@ legend {
   display: block;
 }
 
-/* Colors */
 /* font-weight */
 /* font-family */
 /* Border-radius */
@@ -702,7 +701,7 @@ form textarea:active {
   position: sticky;
   top: 0px;
   padding: 20px 0;
-  border-bottom: 1px solid #26292D;
+  border-bottom: 1px solid var(--black-border);
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px); /* Apply the blur effect to the background */
@@ -919,32 +918,6 @@ form textarea:active {
   letter-spacing: 0.5px;
 }
 
-.arrow {
-  display: none;
-  position: absolute;
-  bottom: 50px;
-  animation: animation-arrow 5s ease-in-out infinite;
-}
-@media (max-width: 620px) {
-  .arrow {
-    display: block;
-  }
-}
-
-@keyframes animation-arrow {
-  0%, 100% {
-    bottom: 50px;
-  }
-  30% {
-    bottom: 30px;
-  }
-  50% {
-    bottom: 50px;
-  }
-  70% {
-    bottom: 30px;
-  }
-}
 @keyframes animation {
   0%, 100% {
     top: 0;
