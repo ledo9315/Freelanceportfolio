@@ -53,19 +53,20 @@
 
 
     &__title {
-            @include custom-heading($font-hanson, $font-weight-bold, var(--font-size-h1), 1.1, 10px);
+            word-spacing: -5px;
+            @include custom-heading($font-hanson, $font-weight-bold, var(--font-size-h1), 1, 10px);
 
             @include responsive-font-size(960px, 4.2rem);
             @include responsive-font-size(620px, 2.5rem);
         }
 
     &__skills {
-        @include custom-heading($font-hanson, $font-weight-bold, var(--font-size-h1), 1.1, 30px);
+        @include custom-heading($font-hanson, $font-weight-bold, var(--font-size-h1), 1, 30px);
         
         @include responsive-font-size(960px, 4.2rem);
         @include responsive-font-size(620px, 2.5rem);
 
-        height: 140px;
+        height: 130px;
         overflow: hidden;
 
         @media (max-width: 620px) {

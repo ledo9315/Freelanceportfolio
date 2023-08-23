@@ -70,8 +70,12 @@
   }
 
   span {
-    color: var(--accent2);
+    color: var(--accent);
     text-decoration: underline;
+  }
+
+  .uiux {
+    color: var(--accent2);
   }
 }
 
@@ -187,6 +191,10 @@
       transform: translateX(0);
     }
   }
+
+
+
+  /* Kontakt */
 
   .contact-wrapper {
     margin-top: 50px;
