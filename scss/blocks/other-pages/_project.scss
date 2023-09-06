@@ -20,7 +20,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 
     @media (max-width: 620px) {
         width: 100%;
@@ -84,7 +84,7 @@
         color: var(--title-color);
         text-transform: uppercase;
         text-align: start;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         font-family: $font-hanson;
         font-size: var(--font-size-h3);
     }
@@ -94,7 +94,7 @@
         font-family: $font-hanson;
         font-weight: bold;
         font-size: var(--font-size-h4);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     p {

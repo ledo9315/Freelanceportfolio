@@ -211,12 +211,15 @@
   }
   
   .contact-text {
-    max-width: 600px;
+    max-width: 670px;
+    word-spacing: -20px;
     font-family: $font-hanson;
-    font-size: var(--font-size-h2);
+    font-size: 4rem;
     color: var(--title-color);
+    line-height: 1;
 
     @media (max-width: 620px) {
+      word-spacing: normal;
       font-size: var(--font-size-h3);
     }
 
