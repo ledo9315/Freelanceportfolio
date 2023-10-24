@@ -1,35 +1,22 @@
-@import './components/fonts';
 /* Base */
-@import './base/reset';
-@import './base/variables';
-@import './base/base';
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/base";
 
 /* Components */
-@import './components/buttons';
-
+@import "./components/fonts";
+@import "./components/buttons";
+@import "./components/marquee";
+@import "./components/animations";
+@import "./components/hamburger";
 
 /* Pages */
-@import'./blocks/other-pages/project';
-@import'./blocks/other-pages/skills&contact';
-
-
-
+@import "./blocks/other-pages/project";
+@import "./blocks/other-pages/contact";
+@import "./blocks/other-pages/about_me";
 
 /* Blocks */
-@import './blocks/nav';
-@import './blocks/header';
-@import './blocks/main-section';
-@import './blocks/footer';
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "./blocks/nav";
+@import "./blocks/header";
+@import "./blocks/main-section";
+@import "./blocks/footer";

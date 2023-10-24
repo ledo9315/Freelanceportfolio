@@ -1,31 +1,88 @@
-  /* font-weight */
-  $font-weight-regular: 400;
-  $font-weight-medium: 500;
-  $font-weight-bold: 700;
-  
-  /* font-family */
-  $font-dm-sans: 'DM Sans', sans-serif;
-  $font-poppins: 'Poppins', sans-serif;
-  $font-hanson: 'Hanson', sans-serif;
-  $font-founders: 'FoundersGrotesk', sans-serif;
+:root {
+  /* Color */
+  --blackpure: #000;
+  --black: #181818;
+  --black-border: #26292d;
+  --grey-border: #969696;
+  --dark-grey: #1f1f1f;
+  --grey: #505050;
+  --white: #eee9e1;
+  --white-text: #bfbbb6;
+  --purple: #a196df;
+  --yellowgreen: #90d491;
+  --background-transparent: #000000cc;
 
+  --text-color: var(--black);
+  --dark-bg: var(--black);
+  --dark-border: var(--black-border);
+  --header-text: var(--white);
+  --accent: var(--purple);
+  --accent2: var(--yellowgreen);
 
-/* Border-radius */
-$border-radius-button: 5px;
-$border-radius-card: 10px;
+  /* Font-size */
+  --font-size-title-headline: 4.2rem;
+  --font-size-h1: 3.6rem;
+  --font-size-h2: 2.6rem;
+  --font-size-h3: 1.8rem;
+  --font-size-text-big: 1.2rem;
+  --font-size-text-normal: 1rem;
+  --font-size-text-small: 0.9rem;
 
-/* Box-shadow */
-$box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+  /* Font-weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
+  /* Font-family */
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-hanson: "Hanson", sans-serif;
+  --font-founders: "FoundersGrotesk", sans-serif;
+
+  /* Border-radius */
+  --border-radius-button: 5px;
+  --border-radius-card: 10px;
+
+  /* Light mode */
+  --title-color: var(--grey);
+  --page-bg: var(--white);
+  --text-color: var(--grey);
+  --title-1: var(--purple);
+  --project-card-bg: var(--white);
+  --project-card-text: var(--black);
+  --box-shadow: 0px 5px 35px #00000040;
+
+  /* Header-animation */
+  --top-size-small-1: -90px;
+  --top-size-small-2: -180px;
+  --top-size-big-1: -150px;
+  --top-size-big-2: -300px;
+
+  --header-top-size-1: var(--top-size-big-1);
+  --header-top-size-2: var(--top-size-big-2);
+
+  @media (max-width: 620px) {
+    --header-top-size-1: var(--top-size-small-1);
+    --header-top-size-2: var(--top-size-small-2);
+  }
+}
+
+.dark {
+  /* Dark mode */
+  --title-color: var(--white);
+  --page-bg: var(--black);
+  --text-color: var(--white-text);
+  --title-1: var(--yellowgreen);
+  --project-card-bg: var(--blackpure);
+  --project-card-text: var(--white);
+}
 
 /* Mixin Header */
-
-@mixin custom-heading($font, $weight, $size, $line-height, $margin-bottom) {
+@mixin custom-heading($font, $weight, $size, $line-height) {
   font-family: $font;
   font-weight: $weight;
   font-size: $size;
   line-height: $line-height;
-  margin-bottom: $margin-bottom;
 }
 
 @mixin responsive-font-size($max-width, $font-size) {

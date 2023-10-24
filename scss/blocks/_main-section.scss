@@ -1,43 +1,43 @@
 .section {
-    padding: 100px 0;
+  padding: 100px 0;
 
-    @media (max-width: 620px) {
-        padding: 40px 0;;
-    }
+  @media (max-width: 620px) {
+    padding: 40px 0;
+  }
 }
 
 .projects {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 
-    @media (max-width: 960px) {
-        flex-direction: column;
-        align-items: center;
-    }
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .project {
-    max-width: 370px;
-    background-color: var(--project-card-bg);
-    box-shadow: var(--box-shadow);
-    border-radius: $border-radius-card;
+  max-width: 370px;
+  background-color: var(--project-card-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-card);
 
-    &__img {
-        border-radius: $border-radius-card;
-    }
+  &__img {
+    border-radius: var(--border-radius-card);
+  }
 
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 
-    &:hover {
-        transform: scale(1.02);    
-    }
+  &:hover {
+    transform: scale(1.02);
+  }
 
-    @media (max-width: 960px) {
-        max-width: 70%;
-    }
+  @media (max-width: 960px) {
+    max-width: 70%;
+  }
 
-    @media (max-width: 620px) {
-        max-width: 100%;
-    }
+  @media (max-width: 620px) {
+    max-width: 100%;
+  }
 }

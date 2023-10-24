@@ -1,0 +1,28 @@
+/* Header Animation */
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: var(--header-top-size-1);
+  }
+  45% {
+    top: var(--header-top-size-1);
+  }
+  50% {
+    top: 0;
+  }
+  70% {
+    top: 0;
+  }
+  75% {
+    top: var(--header-top-size-1);
+  }
+  95% {
+    top: var(--header-top-size-1);
+  }
+}

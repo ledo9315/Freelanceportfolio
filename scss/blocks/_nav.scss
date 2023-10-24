@@ -1,140 +1,92 @@
 .nav {
-    font-family: $font-founders;
+  font-family: var(--font-founders);
+  z-index: 9;
+  position: sticky;
+  top: 0px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--black-border);
+  background-color: var(--background-transparent);
+  backdrop-filter: blur(12px);
 
-    z-index: 9;
-    position: sticky;
-    top: 0px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--black-border);
-    background-color: rgba($color: #000000, $alpha: 0.7);
-    backdrop-filter: blur(12px); /* Apply the blur effect to the background */
-
-    @media (max-width: 960px) {
-        background-color: black;
-        backdrop-filter:unset;
-    }
+  @media (max-width: 960px) {
+    background-color: var(--blackpure);
+    backdrop-filter: unset;
+  }
 }
 
-
 .nav-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
 
+.nav-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 15px;
+  font-weight: var(--font-weight-medium);
 
-    .nav-list {
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        column-gap: 40px;
-        row-gap: 15px;
-        font-weight: $font-weight-medium;
-        
+  &__link,
+  &__link--active {
+    color: var(--white);
+  }
 
-        &__link {
-            color: var(--white);
-            &:hover {
-                border-bottom: 3px solid var(--accent2);
-            }
-        }
+  &__link:hover {
+    border-bottom: 3px solid var(--accent2);
+  }
 
-        &__link--active {
-            color: var(--white);
-            position: relative;
-        }
+  &__link--active {
+    position: relative;
+  }
 
-        &__link--active::before {
-            content: "";
-
-            position: absolute;
-            left: 0;
-            top: 100%;
-
-            display: block;
-            height: 3px;
-            width: 100%;
-            background-color: var(--accent2);
-        }
-        
-    }
-
-    @media (max-width: 960px) {
-        
-    }
+  &__link--active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--accent2);
+  }
 }
 
 .logo {
-    
-    transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 
-    &:hover {
-        scale: 1.1;
-    }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
+@media (max-width: 960px) {
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+    font-size: 2rem;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    transition: 0.3s;
+  }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;;
-    background-color: var(--white);
+  .nav-list__item {
+    margin: 16px 0;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
 }
-
-
-/* Hamburger */
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-
-    @media(max-width: 960px) {
-        display: block;
-    }
-}
-
-@media(max-width: 960px) {
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-        
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-list {
-        width: 100%;
-        height: 100%;
-        padding: 150px 0;
-        font-size: 2rem;
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: rgba($color: #000000, $alpha: 0.9);
-        backdrop-filter: blur(20px); /* Apply the blur effect to the background */
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-list__item {
-        margin: 16px 0;
-    }
-
-    .nav-list.active {
-        left: 0;
-    }
-}
-
