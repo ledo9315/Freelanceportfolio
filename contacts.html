@@ -52,14 +52,13 @@
   </head>
 
   <body>
-    <!-- Nav -->
     <nav class="nav">
       <div class="container">
         <div class="nav-row">
           <a href="./index.html">
             <img class="logo" src="./img/icons/logo.svg" alt="logo" />
           </a>
-          <button class="dark-mode-btn">
+          <button class="dark-mode-btn" aria-label="Dark Mode">
             <img
               src="./img/icons/sun.svg"
               alt="Light mode"
@@ -71,26 +70,26 @@
               class="dark-mode-btn__icon"
             />
           </button>
-
           <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link">Projekte</a>
             </li>
-
             <li class="nav-list__item">
               <a href="./about_me.html" class="nav-list__link"
                 >&uuml;ber mich</a
               >
             </li>
-
             <li class="nav-list__item">
               <a href="./contacts.html" class="nav-list__link--active"
                 >Kontakt</a
               >
             </li>
-
             <li class="nav-list__item">
-              <div class="dropdown nav-list__link">
+              <div
+                class="dropdown nav-list__link"
+                role="button"
+                aria-haspopup="true"
+              >
                 Rechtliches
                 <div class="dropdown-content">
                   <a href="./impressum.html">Impressum</a>
@@ -99,8 +98,7 @@
               </div>
             </li>
           </ul>
-
-          <div class="hamburger">
+          <div class="hamburger" role="button" aria-label="Hauptmenü">
             <span class="bar"></span><span class="bar"></span
             ><span class="bar"></span>
           </div>
@@ -122,6 +120,7 @@
               placeholder="Dein Name"
               id="name"
               name="name"
+              aria-label="Dein Name"
               required
             />
             <input
@@ -129,16 +128,20 @@
               placeholder="Deine Email"
               id="email"
               name="email"
+              aria-label="Deine Email"
               required
             />
             <textarea
               id="message"
               placeholder="Schreibe mir eine Nachricht"
               name="message"
+              aria-label="Deine Nachricht"
               rows="4"
               required
             ></textarea>
-            <button class="button" type="submit">Senden</button>
+            <button class="button" aria-label="Nachricht senden" type="submit">
+              Senden
+            </button>
           </form>
         </div>
       </div>
@@ -149,42 +152,55 @@
       <div class="container">
         <ul class="social">
           <li class="social__item">
-            <a href="https://t.me/ledo9913" target="_blank">
-              <img src="./img/icons/telegram.svg" alt="telegram" />
+            <a
+              href="https://t.me/ledo9913"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <img src="./img/icons/telegram.svg" alt="Telegram" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://discordapp.com/users/1016065690253406298"
               target="_blank"
+              aria-label="Discord"
             >
-              <img src="./img/icons/discord.svg" alt="discord" />
+              <img src="./img/icons/discord.svg" alt="Discord" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://dribbble.com/ledo93" target="_blank">
-              <img src="./img/icons/dribbble.svg" alt="dribbble" />
+            <a
+              href="https://dribbble.com/ledo93"
+              target="_blank"
+              aria-label="Dribbble"
+            >
+              <img src="./img/icons/dribbble.svg" alt="Dribbble" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://github.com/ledo9315" target="_blank">
-              <img src="./img/icons/gitHub.svg" alt="gitHub" />
+            <a
+              href="https://github.com/ledo9315"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img src="./img/icons/gitHub.svg" alt="GitHub" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://www.linkedin.com/in/leonid-domahalskyy-0a6b95206/?originalSubdomain=de"
               target="_blank"
+              aria-label="LinkedIn"
             >
-              <img src="./img/icons/linkedIn.svg" alt="linkedIn" />
+              <img src="./img/icons/linkedIn.svg" alt="LinkedIn" />
             </a>
           </li>
         </ul>
-        <div class="copyright">
-          <p>&copy; Leonid Domahalskyy</p>
-        </div>
+        <div class="copyright"><p>&copy; Leonid Domahalskyy</p></div>
       </div>
     </footer>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

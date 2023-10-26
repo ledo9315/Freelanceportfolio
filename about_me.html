@@ -58,7 +58,7 @@
           <a href="./index.html">
             <img class="logo" src="./img/icons/logo.svg" alt="logo" />
           </a>
-          <button class="dark-mode-btn">
+          <button class="dark-mode-btn" aria-label="Dark Mode">
             <img
               src="./img/icons/sun.svg"
               alt="Light mode"
@@ -70,24 +70,24 @@
               class="dark-mode-btn__icon"
             />
           </button>
-
           <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link">Projekte</a>
             </li>
-
             <li class="nav-list__item">
-              <a href="./skills.html" class="nav-list__link--active"
+              <a href="./about_me.html" class="nav-list__link--active"
                 >&uuml;ber mich</a
               >
             </li>
-
             <li class="nav-list__item">
               <a href="./contacts.html" class="nav-list__link">Kontakt</a>
             </li>
-
             <li class="nav-list__item">
-              <div class="dropdown nav-list__link">
+              <div
+                class="dropdown nav-list__link"
+                role="button"
+                aria-haspopup="true"
+              >
                 Rechtliches
                 <div class="dropdown-content">
                   <a href="./impressum.html">Impressum</a>
@@ -96,8 +96,7 @@
               </div>
             </li>
           </ul>
-
-          <div class="hamburger">
+          <div class="hamburger" role="button" aria-label="Hauptmenü">
             <span class="bar"></span><span class="bar"></span
             ><span class="bar"></span>
           </div>
@@ -109,7 +108,7 @@
     <main class="section">
       <div class="container">
         <section>
-          <h1 class="title-1">&Uuml;ber mich</h1>
+          <h1 class="title-1">Über mich</h1>
 
           <div class="about-wrapper">
             <div class="about-image">
@@ -122,15 +121,15 @@
                 Norden Deutschlands. Mein Wissen in der Softwareentwicklung habe
                 ich durch kontinuierliches Engagement, praktische Erfahrungen
                 und mein Studium der
-                <span>"Medieninformatik"</span> an der Hochschule Flensburg
-                erworben.
+                <span role="text">"Medieninformatik"</span> an der Hochschule
+                Flensburg erworben.
               </p>
               <p>
                 Ich habe eine besondere Leidenschaft für die Entwicklung von
                 Webanwendungen, insbesondere im Bereich
-                <span class="ui-ux-span">"UI/UX Design"</span> und
-                <span class="web-dev-span">"Webentwicklung"</span>. Mir ist es
-                wichtig, dass Lösungen nicht nur funktional, sondern auch
+                <span role="text">"UI/UX Design"</span> und
+                <span role="text">"Webentwicklung"</span>. Mir ist es wichtig,
+                dass Lösungen nicht nur funktional, sondern auch
                 benutzerfreundlich sind. Innovation und Benutzerfreundlichkeit
                 sind meine ständige Motivation.
               </p>
@@ -160,7 +159,7 @@
               <section>
                 <h2 class="title-3 marquee-title">Frontend</h2>
                 <div class="marquee">
-                  <ul class="marquee__content">
+                  <ul class="marquee__content" role="marquee">
                     <li aria-hidden="true">React</li>
                     <li aria-hidden="true">JavaScript</li>
                     <li aria-hidden="true">Tailwind</li>
@@ -169,7 +168,7 @@
                     <li aria-hidden="true">SASS</li>
                   </ul>
 
-                  <ul aria-hidden="true" class="marquee__content">
+                  <ul class="marquee__content" role="marquee">
                     <li aria-hidden="true">React</li>
                     <li aria-hidden="true">JavaScript</li>
                     <li aria-hidden="true">Tailwind</li>
@@ -186,7 +185,7 @@
               <section>
                 <h2 class="title-3 marquee-title">Backend</h2>
                 <div class="marquee marquee--reverse">
-                  <ul class="marquee__content">
+                  <ul class="marquee__content" role="marquee">
                     <li aria-hidden="true">Deno</li>
                     <li aria-hidden="true">Node.Js</li>
                     <li aria-hidden="true">Deno</li>
@@ -195,7 +194,7 @@
                     <li aria-hidden="true">Node.Js</li>
                   </ul>
 
-                  <ul aria-hidden="true" class="marquee__content">
+                  <ul class="marquee__content" role="marquee">
                     <li aria-hidden="true">Deno</li>
                     <li aria-hidden="true">Node.Js</li>
                     <li aria-hidden="true">Deno</li>
@@ -222,7 +221,7 @@
                   <dt>Deutsch</dt>
                   <dd>
                     <span class="level-description" aria-hidden="true">C2</span>
-                    <div class="level">
+                    <div class="level" role="img" aria-label="Sprachniveau C2">
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -236,7 +235,7 @@
                   <dt>Russisch</dt>
                   <dd>
                     <span class="level-description" aria-hidden="true">C2</span>
-                    <div class="level">
+                    <div class="level" role="img" aria-label="Sprachniveau C2">
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -252,7 +251,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Muttersprache</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Sprachniveau Muttersprache"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -266,7 +269,7 @@
                   <dt>English</dt>
                   <dd>
                     <span class="level-description" aria-hidden="true">B1</span>
-                    <div class="level">
+                    <div class="level" role="img" aria-label="Sprachniveau B1">
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -287,7 +290,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Fortgeschritten</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Fähigkeitsniveau Fortgeschritten"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -303,7 +310,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Anfänger</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Fähigkeitsniveau Anfänger"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="inactive"></div>
@@ -319,7 +330,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Anfänger</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Fähigkeitsniveau Anfänger"
+                    >
                       <div class="active"></div>
                       <div class="inactive"></div>
                       <div class="inactive"></div>
@@ -334,7 +349,9 @@
           </div>
           <div class="grid-right">
             <section>
-              <h3 class="title-3">Programmiersprachen</h3>
+              <h3 id="programming_languages" class="title-3">
+                Pro<wbr />grammier<wbr />sprachen
+              </h3>
               <dl>
                 <div class="item">
                   <dt>JavaScript</dt>
@@ -342,7 +359,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Kompetent</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Kompetenzniveau: Kompetent"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -358,7 +379,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Fortgeschritten</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Kompetenzniveau: Fortgeschritten"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -374,14 +399,17 @@
                     <span class="level-description" aria-hidden="true"
                       >Anfänger</span
                     >
-                    <div class="level" role="img">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Kompetenzniveau: Anfänger"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="inactive"></div>
                       <div class="inactive"></div>
                       <div class="inactive"></div>
                       <div class="inactive"></div>
-                      <div></div>
                     </div>
                   </dd>
                 </div>
@@ -391,7 +419,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Anfänger</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Kompetenzniveau: Anfänger"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="inactive"></div>
@@ -412,7 +444,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Fortgeschritten</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Designniveau: Fortgeschritten"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -428,7 +464,11 @@
                     <span class="level-description" aria-hidden="true"
                       >Fortgeschritten</span
                     >
-                    <div class="level">
+                    <div
+                      class="level"
+                      role="img"
+                      aria-label="Designniveau: Fortgeschritten"
+                    >
                       <div class="active"></div>
                       <div class="active"></div>
                       <div class="active"></div>
@@ -451,40 +491,52 @@
       <div class="container">
         <ul class="social">
           <li class="social__item">
-            <a href="https://t.me/ledo9913" target="_blank">
-              <img src="./img/icons/telegram.svg" alt="telegram" />
+            <a
+              href="https://t.me/ledo9913"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <img src="./img/icons/telegram.svg" alt="Telegram" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://discordapp.com/users/1016065690253406298"
               target="_blank"
+              aria-label="Discord"
             >
-              <img src="./img/icons/discord.svg" alt="discord" />
+              <img src="./img/icons/discord.svg" alt="Discord" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://dribbble.com/ledo93" target="_blank">
-              <img src="./img/icons/dribbble.svg" alt="dribbble" />
+            <a
+              href="https://dribbble.com/ledo93"
+              target="_blank"
+              aria-label="Dribbble"
+            >
+              <img src="./img/icons/dribbble.svg" alt="Dribbble" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://github.com/ledo9315" target="_blank">
-              <img src="./img/icons/gitHub.svg" alt="gitHub" />
+            <a
+              href="https://github.com/ledo9315"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img src="./img/icons/gitHub.svg" alt="GitHub" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://www.linkedin.com/in/leonid-domahalskyy-0a6b95206/?originalSubdomain=de"
               target="_blank"
+              aria-label="LinkedIn"
             >
-              <img src="./img/icons/linkedIn.svg" alt="linkedIn" />
+              <img src="./img/icons/linkedIn.svg" alt="LinkedIn" />
             </a>
           </li>
         </ul>
-        <div class="copyright">
-          <p>&copy; Leonid Domahalskyy</p>
-        </div>
+        <div class="copyright"><p>&copy; Leonid Domahalskyy</p></div>
       </div>
     </footer>
 

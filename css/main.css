@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Base */
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
@@ -227,20 +226,20 @@ a {
     padding: 0 20px;
   }
 }
-@media (max-width: 620px) {
-  .title-1 {
-    margin-bottom: 30px;
-    font-size: var(--font-size-h3);
-  }
-}
 
 .title-2 {
   font-size: var(--font-size-h2);
   margin-bottom: 30px;
 }
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   .title-2 {
     font-size: var(--font-size-h3);
+    padding: 0 20px;
+  }
+}
+@media (max-width: 620px) {
+  .title-2 {
+    font-size: var(--font-size-h4);
   }
 }
 
@@ -248,7 +247,7 @@ a {
   font-size: var(--font-size-h3);
   margin-bottom: 20px;
 }
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   .title-3 {
     font-size: var(--font-size-h4);
   }
@@ -257,11 +256,6 @@ a {
 .title-4 {
   font-size: var(--font-size-h4);
   margin-bottom: 20px;
-}
-@media (max-width: 620px) {
-  .title-4 {
-    font-size: var(--font-size-h4);
-  }
 }
 
 /* Components */
@@ -330,7 +324,7 @@ a {
 }
 @media (max-width: 620px) {
   .button {
-    min-width: 90%;
+    width: 100%;
   }
 }
 
@@ -437,8 +431,6 @@ a {
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
-/* Quelle ist Codepen */
-/* Pause animation when reduced-motion is set */
 @media (prefers-reduced-motion: reduce) {
   .marquee__content {
     animation-play-state: paused !important;
@@ -449,25 +441,21 @@ a {
   animation: scroll 50s linear infinite;
 }
 
-/* Reverse animation */
 .marquee--reverse .marquee__content {
   animation-direction: reverse;
 }
 
-/* Attempt to size parent based on content. Keep in mind that the parent width is equal to both content containers that stretch to fill the parent. */
 .marquee--fit-content {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
-/* A fit-content sizing fix: Absolute position the duplicate container. This will set the size of the parent wrapper to a single child container. Shout out to Olavi's article that had this solution 👏 @link: https://olavihaapala.fi/2021/02/23/modern-marquee.html  */
 .marquee--pos-absolute .marquee__content:last-child {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* Enable position absolute animation on the duplicate content (last-child) */
 .enable-animation .marquee--pos-absolute .marquee__content:last-child {
   animation-name: scroll-abs;
 }
@@ -542,39 +530,64 @@ a {
 }
 .dropdown {
   cursor: pointer;
+  position: relative; /* Set the position to relative */
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   left: -20px;
-  top: 23px;
-  border-radius: 5px;
+  top: -10px;
+  z-index: -1;
+  border: solid 0.3px var(--grey);
+  border-top: transparent;
   background-color: var(--blackpure);
   min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .dropdown-content a {
   color: var(--white);
-  margin-top: 10px;
+  margin-top: 4px;
   padding: 6px 16px;
   text-decoration: none;
   text-align: center;
   display: block;
   transition: 0.3s;
 }
+.dropdown-content a:first-child {
+  margin-top: 50px;
+}
+.dropdown-content a:last-child {
+  margin-bottom: 10px;
+}
 
 .dropdown-content a:hover {
-  transform: scale(1.05);
+  color: var(--accent2);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1; /* Set opacity to 1 on hover */
+  visibility: visible; /* Make the content visible on hover */
 }
 
 @media (max-width: 960px) {
+  .dropdown {
+    visibility: hidden;
+  }
   .dropdown-content {
+    display: block;
+    position: static;
+    z-index: 1;
     background-color: transparent;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-content a:first-child {
+    margin: 0;
   }
 }
 /* Pages */
@@ -628,10 +641,7 @@ dt {
 }
 
 .project-details__info-banner__headline {
-  color: var(--title-color);
-  font-family: var(--font-hanson);
   text-transform: uppercase;
-  font-size: var(--font-size-h3);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -779,6 +789,10 @@ h3 {
   text-align: start;
 }
 
+#programming_languages {
+  overflow-wrap: break-word;
+}
+
 .capabilities {
   display: flex;
   justify-content: space-between;
@@ -839,8 +853,12 @@ dd {
   background-color: var(--grey);
 }
 
+.inactive:last-of-type,
+.active:last-of-type {
+  margin-right: 0;
+}
+
 .level-description {
-  padding-right: 8px;
   font-size: 0.9rem;
   text-transform: none;
 }
@@ -859,11 +877,9 @@ dd {
   .level .inactive {
     width: 38px;
     height: 6px;
-    margin: 0 5px 0 0;
   }
   dt {
     margin-right: 10px;
-    font-size: 1.1rem;
   }
 }
 .impressum p {
@@ -896,6 +912,11 @@ dd {
   margin-bottom: 40px;
 }
 
+.impressum .title-1 {
+  padding: 0;
+  text-align: left;
+}
+
 .datenschutz p {
   text-transform: none;
   margin-bottom: 50px;
@@ -920,8 +941,14 @@ dd {
   font-size: var(--font-size-text-big);
 }
 
-.datenschutz .collect_informations,
-.datenschutz .use_informations {
+.datenschutz .title-1 {
+  padding: 0;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.datenschutz #collect_informations,
+.datenschutz #use_informations {
   margin-bottom: 10px;
 }
 
@@ -1039,6 +1066,9 @@ dd {
   }
   .nav-list__item {
     margin: 16px 0;
+  }
+  .nav-list__item:last-of-type {
+    margin-top: -40px;
   }
   .nav-list.active {
     left: 0;

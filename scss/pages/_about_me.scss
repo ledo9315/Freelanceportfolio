@@ -49,6 +49,10 @@ h3 {
   text-align: start;
 }
 
+#programming_languages {
+  overflow-wrap: break-word;
+}
+
 .capabilities {
   display: flex;
   justify-content: space-between;
@@ -108,8 +112,12 @@ dd {
   background-color: var(--grey);
 }
 
+.inactive:last-of-type,
+.active:last-of-type {
+  margin-right: 0;
+}
+
 .level-description {
-  padding-right: 8px;
   font-size: 0.9rem;
   text-transform: none;
 }
@@ -129,11 +137,9 @@ dd {
   .level .inactive {
     width: 38px;
     height: 6px;
-    margin: 0 5px 0 0;
   }
 
   dt {
     margin-right: 10px;
-    font-size: 1.1rem;
   }
 }

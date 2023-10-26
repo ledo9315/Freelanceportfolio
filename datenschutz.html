@@ -59,7 +59,7 @@
           <a href="./index.html">
             <img class="logo" src="./img/icons/logo.svg" alt="logo" />
           </a>
-          <button class="dark-mode-btn">
+          <button class="dark-mode-btn" aria-label="Dark Mode">
             <img
               src="./img/icons/sun.svg"
               alt="Light mode"
@@ -71,24 +71,24 @@
               class="dark-mode-btn__icon"
             />
           </button>
-
           <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link">Projekte</a>
             </li>
-
             <li class="nav-list__item">
               <a href="./about_me.html" class="nav-list__link"
                 >&uuml;ber mich</a
               >
             </li>
-
             <li class="nav-list__item">
               <a href="./contacts.html" class="nav-list__link">Kontakt</a>
             </li>
-
             <li class="nav-list__item">
-              <div class="dropdown nav-list__link">
+              <div
+                class="dropdown nav-list__link--active"
+                role="button"
+                aria-haspopup="true"
+              >
                 Rechtliches
                 <div class="dropdown-content">
                   <a href="./impressum.html">Impressum</a>
@@ -97,8 +97,7 @@
               </div>
             </li>
           </ul>
-
-          <div class="hamburger">
+          <div class="hamburger" role="button" aria-label="Hauptmenü">
             <span class="bar"></span><span class="bar"></span
             ><span class="bar"></span>
           </div>
@@ -107,10 +106,15 @@
     </nav>
 
     <!-- Main -->
-    <div class="container">
-      <section class="datenschutz">
-        <h1 class="title-1">Datenschutz</h1>
-        <p>Zuletzt aktualisiert am: 26.10.2023</p>
+    <section class="datenschutz">
+      <div class="container">
+        <h1 class="title-1">Daten<wbr />schutz</h1>
+        <p>
+          <strong
+            >Zuletzt aktualisiert am: <br />
+            26.10.2023</strong
+          >
+        </p>
 
         <p>
           Die Privatsphäre ist von hoher Bedeutung. Diese Datenschutzrichtlinie
@@ -121,7 +125,7 @@
         </p>
 
         <h2 class="title-3">Welche Informationen werden gesammelt?</h2>
-        <p class="collect_informations">
+        <p id="collect_informations">
           <strong>Persönliche Informationen:</strong>Es werden möglicherweise
           persönliche Informationen wie Name, E-Mail-Adresse und Telefonnummer
           gesammelt, wenn die Dienste genutzt oder Kontakt aufgenommen wird.
@@ -134,7 +138,7 @@
         </p>
 
         <h2 class="title-3">Wie verwenden die Informationen verwendet?</h2>
-        <p class="use_informations">
+        <p id="use_informations">
           Die gesammelten Informationen werden für verschiedene Zwecke genutzt,
           darunter:
         </p>
@@ -178,7 +182,7 @@
           ergriffen.
         </p>
 
-        <h2 class="title-3">Ihre Datenschutzrechte</h2>
+        <h2 class="title-3">Ihre Datenschutz<wbr />rechte</h2>
         <p>
           Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen, sie zu
           korrigieren, zu löschen oder die Verarbeitung einzuschränken. Wenn Sie
@@ -207,50 +211,63 @@
           >
           <p>Telefon: +49-01627195885</p>
         </address>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <ul class="social">
           <li class="social__item">
-            <a href="https://t.me/ledo9913" target="_blank">
-              <img src="./img/icons/telegram.svg" alt="telegram" />
+            <a
+              href="https://t.me/ledo9913"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <img src="./img/icons/telegram.svg" alt="Telegram" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://discordapp.com/users/1016065690253406298"
               target="_blank"
+              aria-label="Discord"
             >
-              <img src="./img/icons/discord.svg" alt="discord" />
+              <img src="./img/icons/discord.svg" alt="Discord" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://dribbble.com/ledo93" target="_blank">
-              <img src="./img/icons/dribbble.svg" alt="dribbble" />
+            <a
+              href="https://dribbble.com/ledo93"
+              target="_blank"
+              aria-label="Dribbble"
+            >
+              <img src="./img/icons/dribbble.svg" alt="Dribbble" />
             </a>
           </li>
           <li class="social__item">
-            <a href="https://github.com/ledo9315" target="_blank">
-              <img src="./img/icons/gitHub.svg" alt="gitHub" />
+            <a
+              href="https://github.com/ledo9315"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img src="./img/icons/gitHub.svg" alt="GitHub" />
             </a>
           </li>
           <li class="social__item">
             <a
               href="https://www.linkedin.com/in/leonid-domahalskyy-0a6b95206/?originalSubdomain=de"
               target="_blank"
+              aria-label="LinkedIn"
             >
-              <img src="./img/icons/linkedIn.svg" alt="linkedIn" />
+              <img src="./img/icons/linkedIn.svg" alt="LinkedIn" />
             </a>
           </li>
         </ul>
-        <div class="copyright">
-          <p>&copy; Leonid Domahalskyy</p>
-        </div>
+        <div class="copyright"><p>&copy; Leonid Domahalskyy</p></div>
       </div>
     </footer>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

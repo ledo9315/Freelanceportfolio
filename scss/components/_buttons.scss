@@ -50,7 +50,7 @@
   @include responsive-font-size(620px, var(--font-size-normal));
 
   @media (max-width: 620px) {
-    min-width: 90%;
+    width: 100%;
   }
 }
 

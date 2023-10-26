@@ -1,37 +1,65 @@
 .dropdown {
   cursor: pointer;
+  position: relative; /* Set the position to relative */
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   left: -20px;
-  top: 23px;
-  border-radius: 5px;
+  top: -10px;
+  z-index: -1;
+  border: solid 0.3px var(--grey);
+  border-top: transparent;
   background-color: var(--blackpure);
   min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .dropdown-content a {
   color: var(--white);
-  margin-top: 10px;
+  margin-top: 4px;
   padding: 6px 16px;
   text-decoration: none;
   text-align: center;
   display: block;
   transition: 0.3s;
+
+  &:first-child {
+    margin-top: 50px;
+  }
+  &:last-child {
+    margin-bottom: 10px;
+  }
 }
 
 .dropdown-content a:hover {
-  transform: scale(1.05);
+  color: var(--accent2);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1; /* Set opacity to 1 on hover */
+  visibility: visible; /* Make the content visible on hover */
 }
 
 @media (max-width: 960px) {
+  .dropdown {
+    visibility: hidden;
+  }
+
   .dropdown-content {
+    display: block;
+    position: static;
+    z-index: 1;
     background-color: transparent;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+
+    a:first-child {
+      margin: 0;
+    }
   }
 }
