@@ -9,11 +9,14 @@
 @import "./components/marquee";
 @import "./components/animations";
 @import "./components/hamburger";
+@import "./components/dropdown";
 
 /* Pages */
-@import "./blocks/other-pages/project";
-@import "./blocks/other-pages/contact";
-@import "./blocks/other-pages/about_me";
+@import "./pages/project";
+@import "./pages/contact";
+@import "./pages/about_me";
+@import "./pages/impressum";
+@import "./pages/datenschutz";
 
 /* Blocks */
 @import "./blocks/nav";

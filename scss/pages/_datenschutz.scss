@@ -1,0 +1,47 @@
+.datenschutz {
+  p {
+    text-transform: none;
+    margin-bottom: 50px;
+    line-height: 1.4;
+    font-size: var(--font-size-text-big);
+  }
+
+  p:last-child {
+    margin-bottom: 120px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  li {
+    text-transform: none;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    list-style-type: disc;
+  }
+
+  ul {
+    margin: 20px 0 50px;
+    line-height: 1.1;
+    font-size: var(--font-size-text-big);
+  }
+}
+
+.datenschutz .collect_informations,
+.datenschutz .use_informations {
+  margin-bottom: 10px;
+}
+
+.datenschutz address {
+  p {
+    margin: 0;
+  }
+  a {
+    text-transform: none;
+    line-height: 1.4;
+    font-size: var(--font-size-text-big);
+  }
+
+  margin: 0;
+}

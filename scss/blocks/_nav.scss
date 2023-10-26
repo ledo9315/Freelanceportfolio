@@ -38,7 +38,23 @@
   }
 
   &__link:hover {
-    border-bottom: 3px solid var(--accent2);
+    position: relative;
+  }
+
+  &__link:hover::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: var(--accent2);
+    animation: linkHover 0.3s forwards;
+
+    @media (max-width: 960px) {
+      background-color: transparent;
+    }
   }
 
   &__link--active {

@@ -1,4 +1,4 @@
-/* Header Animation */
+/* header Animation */
 @keyframes animation {
   0%,
   100% {
@@ -24,5 +24,17 @@
   }
   95% {
     top: var(--header-top-size-1);
+  }
+}
+
+/* nav-links hover animation */
+@keyframes linkHover {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    right: 0;
   }
 }

@@ -37,7 +37,8 @@ a {
 
 .title-1,
 .title-2,
-.title-3 {
+.title-3,
+.title-4 {
   font-family: var(--font-hanson);
   color: var(--title-color);
   font-weight: var(--font-weight-bold);
@@ -76,6 +77,15 @@ a {
 
 .title-3 {
   font-size: var(--font-size-h3);
+  margin-bottom: 20px;
+
+  @media (max-width: 620px) {
+    font-size: var(--font-size-h4);
+  }
+}
+
+.title-4 {
+  font-size: var(--font-size-h4);
   margin-bottom: 20px;
 
   @media (max-width: 620px) {
