@@ -7,13 +7,13 @@ This repository contains the source code for my personal portfolio website. The 
 
 ## Technology
 
-- **HTML**: For structuring the web content.
-- **CSS**: For styling and responsive design.
-- **JavaScript**: For interactive elements.
-- **PHP**: For the contact form.
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **PHP**
 
 ## Features
-- Responsive design for optimal display on various devices
+- Responsive design 
 
 ## Website
 Visit my portfolio website: [leonid-domahalskyy.de](https://leonid-domahalskyy.de/)
