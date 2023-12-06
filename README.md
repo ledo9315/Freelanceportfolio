@@ -4,8 +4,6 @@
 This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and professional experiences. It is implemented using HTML, SCSS, CSS, JavaScript, and PHP.
 
 ## Features
-- Presentation of my projects and skills
-- Contact form for professional inquiries
 - Responsive design for optimal display on various devices
 
 ## Installation
