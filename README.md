@@ -17,3 +17,9 @@ This repository contains the source code for my personal portfolio website. The 
 
 ## Website
 Visit my portfolio website: [leonid-domahalskyy.de](https://leonid-domahalskyy.de/)
+
+
+
+---
+
+Developed with ☕ and ❤️
