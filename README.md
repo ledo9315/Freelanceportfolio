@@ -1,28 +1,29 @@
+# My Portfolio
 
-# Mein Portfolio
-
-## Beschreibung
-Dieses Repository enthält den Quellcode für meine persönliche Portfolio-Website. Die Website präsentiert meine Projekte, Fähigkeiten und beruflichen Erfahrungen. Sie ist mit HTML, SCSS, CSS, JavaScript und PHP implementiert.
+## Description
+This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and professional experiences. It is implemented using HTML, SCSS, CSS, JavaScript, and PHP.
 
 ## Features
-- Vorstellung meiner Projekte und Fähigkeiten
-- Kontaktformular für professionelle Anfragen
-- Responsives Design für eine optimale Darstellung auf verschiedenen Geräten
+- Presentation of my projects and skills
+- Contact form for professional inquiries
+- Responsive design for optimal display on various devices
 
 ## Installation
-Um die Website lokal auszuführen, folge diesen Schritten:
+To run the website locally, follow these steps:
 
-1. Klone das Repository:
+1. Clone the repository:
+
    ```
    git clone https://github.com/ledo9315/my_portfolio.git
    ```
 
-2. Navigiere in das Verzeichnis des geklonten Repositories.
+2. Navigate to the directory of the cloned repository.
 
-3. Öffne die `index.html`-Datei in einem Webbrowser deiner Wahl.
-   
-4. Oder besuche direkt die Webseite: https://leonid-domahalskyy.de/
+3. Open the `index.html` file in a web browser of your choice.
 
-## Nutzung
-Die Website ist so strukturiert, dass man einfach durch die verschiedenen Abschnitte navigieren kann, um mehr über mich und meine Arbeit zu erfahren. Nutze das Kontaktformular, um mir direkt eine Nachricht zu senden.
+4. Or directly visit the website: https://leonid-domahalskyy.de/
+
+## Usage
+The website is structured to allow easy navigation through the different sections to learn more about me and my work. Use the contact form to send me a direct message.
+
 
